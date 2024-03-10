@@ -4,6 +4,16 @@
 
 $SceneDAPR$ is a novel scene-level sketch dataset, which can be used to automatically analyze the drawing test, Draw-A-Person-in-the-Rain (DAPR), a psychological drawing assessment used for identifying stressful experiences and coping behavior.
 
+# ✨Request for dataset
+
+You need to agree to share your contact information to access the SceneDAPR dataset. 
+The Dataset is licensed for **non-commercial scientific research purposes**. Any action that violates the license agreement is prosecutable by law.
+Please send an email to jiwonkang@g.skku.edu with the following form. If you do not receive a feedback in 7 days, please contact jinyounghan@skku.edu.
+- Name:
+- Email:
+- Affiliation:
+- Short description of your research: 
+
 # Get Started
 
 ```
@@ -113,7 +123,7 @@ yolo predict model=weights/yolov8-all.pt source=inference_test.jpg
 
 # Maintence
 
-This repository is maintained by [Jiwon Kang](https://github.com/ji1kang) and [Jiwon Kim](https://github.com/jiwon-km). Any feedback, extensions & suggestions are welcome!
+This repository is maintained by [Jiwon Kang](https://github.com/ji1kang) and [Jiwon Kim](https://github.com/jiwon-km). Any feedback, extensions & suggestions are welcome! Please send an email to jiwonkang@g.skku.edu.
 
 # Cutsom the Dataset
 
