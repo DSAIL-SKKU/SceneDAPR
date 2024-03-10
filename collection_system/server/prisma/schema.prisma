@@ -1,0 +1,67 @@
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = "5"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dpar-dev.db"
+}
+
+model Participant {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  name      String?
+  age       Int
+  gender    String
+  metaInfo  String?
+  managerId Int?
+  manager   Manager? @relation(fields: [managerId], references: [id])
+  sketch    Sketch[]
+}
+
+model Manager {
+  id           Int           @id @default(autoincrement())
+  createdAt    DateTime      @default(now())
+  name         String        @unique
+  email        String        @unique
+  password     String
+  role         String
+  participants Participant[]
+}
+
+model Sketch {
+  id            Int         @id @default(autoincrement())
+  strokes       String?
+  survey        String?
+  image         String?
+  imagePath     String?
+  allowToPublic Boolean
+  startedAt     DateTime
+  endedAt       DateTime
+  participantId Int
+  sketchInfo    Dashboard?
+  participant   Participant @relation(fields: [participantId], references: [id])
+}
+
+model Dashboard {
+  id                  Int       @id @default(autoincrement())
+  categoryId          String?
+  bbox                String?
+  confidence          String?
+  detectImagePath     String?
+  stressScore         String?
+  resourceScore       String?
+  drawSequence        String?
+  totalStroke         Int?
+  averageStrokeLength Float?
+  rainArea            Float?
+  personArea          Float?
+  rainPersonDist      Float?
+  centerPersonDist    Float?
+  note                String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime? @updatedAt
+  sketchId            Int       @unique
+  sketch              Sketch    @relation(fields: [sketchId], references: [id])
+}

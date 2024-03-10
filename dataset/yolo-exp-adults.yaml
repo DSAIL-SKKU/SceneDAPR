@@ -1,0 +1,19 @@
+# Example usage:
+# python train.py --batch-size 4 --data dataset/dpar.yaml --weights yolov8s.pt --patience 50 --device 0 --epochs 300 --name plus_augmentation
+# python val.py --batch-size 4 --data dataset/dpar.yaml --weights weights/yolov8-all.pt --device 1 --save-txt --exist-ok --name plus_augmentation
+# python detect.py --data dataset/dpar.yaml --weights weights/yolov8-all.pt --source dataset/collected/yolo/images/val
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# Experiemnt Set: All
+path: /path/to/dataset # dataset root dir
+train: [yolo_adult/images/train] # train images
+val: [yolo_adult/images/val] # val images (relative to 'path')
+test: # test images (optional)
+
+# Classes
+nc: 6 # number of classes
+names: ["rain", "umbrella", "person", "lightning", "cloud", "pool"] # class names

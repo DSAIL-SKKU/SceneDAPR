@@ -1,0 +1,124 @@
+.sample-image {
+  outline-style: solid;
+  max-width: 100%;
+  height: auto;
+  outline-color: rgba(0, 0, 0, 0.87);
+}
+
+.result-image {
+  outline-style: solid;
+  max-width: 15%;
+  height: auto;
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+/*  */
+.table-image {
+  outline-style: solid;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Confirmed */
+.img-frame {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: grey;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 150px; /* 원하는 높이 값으로 변경 */
+}
+
+/* Canvas Style */
+
+@import url("https://webfontworld.github.io/gyeonggi/GyeonggiTitle.css");
+
+* {
+  font-family: GyeonggiTitle, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
+.konvajs-content {
+  background-color: white;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%);*/
+}
+
+.konajs-frame {
+  background-color: #2f2f2f;
+  /* 뷰포인트에 맞춰서 설정, 안할경우 기기마다 잘림 */
+  /* width: 100vw; */
+  /* height: 90%; */
+}
+
+.konajs-frame-conent {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.tool-icon {
+  font-size: 1rem;
+  color: cornflowerblue;
+}
+
+.no-drag {
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+/* agreement */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+}
+
+.form-check-label {
+  border: 0px;
+}
+
+.form-control-radio {
+  display: initial;
+  /* width: 100%; */
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
