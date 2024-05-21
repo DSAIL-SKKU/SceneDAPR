@@ -115,7 +115,9 @@ yolo predict model=weights/yolov8-all.pt source=inference_test.jpg
     - `-source path/` # for directory
     - `-source path/*.jpg` # for glob
 
+
 ---
+# Citation
 ### If our work was helpful in your research, please kindly cite this work:
 
 ```
