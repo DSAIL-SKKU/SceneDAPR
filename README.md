@@ -115,6 +115,20 @@ yolo predict model=weights/yolov8-all.pt source=inference_test.jpg
     - `-source path/` # for directory
     - `-source path/*.jpg` # for glob
 
+---
+### If our work was helpful in your research, please kindly cite this work:
+
+```
+BIBTEX
+@inproceedings{kang2024scenedapr,
+  title={SceneDAPR: A Scene-Level Free-Hand Drawing Dataset for Web-based Psychological Drawing Assessment},
+  author={Kang, Jiwon and Kim, Jiwon and Yang, Migyeong and Park, Chaehee and Kim, Taeeun and Song, Hayeon and Han, Jinyoung},
+  booktitle={Proceedings of the ACM on Web Conference 2024},
+  pages={4630--4641},
+  year={2024}
+}
+```
+
 # License
 
 - This work is made available under Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)
